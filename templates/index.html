@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Chatbot</title>
+</head>
+<body>
+  <h2>Recipe Recommendation Chatbot</h2>
+  <input type="text" id="userInput" placeholder="E.g., I want a vegan Asian dish with tofu">
+  <button onclick="sendMessage()">Get Recipe</button>
+  <p id="response"></p>
+
+  <script>
+    async function sendMessage() {
+      const message = document.getElementById("userInput").value;
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+      const data = await response.json();
+      document.getElementById("response").innerText = "Suggested Recipes: " + data.recipes.join(", ");
+    }
+  </script>
+</body>
+</html>
+

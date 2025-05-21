@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Grilled Chicken Salad",
+    "ingredients": ["chicken", "lettuce", "tomato", "olive oil"],
+    "cuisine": "American",
+    "diet": "low-carb"
+  },
+  {
+    "name": "Vegan Tofu Stir Fry",
+    "ingredients": ["tofu", "broccoli", "soy sauce", "garlic"],
+    "cuisine": "Asian",
+    "diet": "vegan"
+  },
+  {
+    "name": "Gluten-Free Pancakes",
+    "ingredients": ["banana", "egg", "gluten-free flour"],
+    "cuisine": "American",
+    "diet": "gluten-free"
+  }
+]
+
