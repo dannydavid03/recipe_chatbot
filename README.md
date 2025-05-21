@@ -17,17 +17,17 @@ A simple Flask web application that helps users find recipes based on ingredient
 ## 📁 Project Structure
 
 recipe_chatbot/
-├── app.py # Main Flask application
-├── nlp_utils.py # NLP utility to extract entities
-├── load_recipes.py # Loads and processes recipes data
-├── recipes/ # Directory containing raw recipe data
-├── recipes.json # Processed recipe data (optional)
-├── recipies.json # Possibly a typo/duplicate of recipes.json
+├── app.py              # Main Flask application
+├── nlp_utils.py        # NLP utility to extract entities
+├── load_recipes.py     # Loads and processes recipe data
+├── recipes/            # Directory containing raw recipe data
+├── recipes.json        # Processed recipe data (used in app)
+├── recipies.json       # (Possibly a typo – check and remove if duplicate)
 ├── templates/
-│ └── index.html # HTML frontend
-├── pycache/ # Python cache files
-├── README.md # Project documentation
-└── venv/ # Python virtual environment (optional)
+│   └── index.html      # HTML frontend
+├── __pycache__/        # Python cache files (can be ignored or .gitignored)
+├── README.md           # Project documentation
+└── venv/               # Python virtual environment (optional)
 
 
 ---
@@ -39,15 +39,20 @@ recipe_chatbot/
 ```bash
 git clone git@github.com:dannydavid03/recipe_chatbot.git
 cd recipe_chatbot
+```
 2. Set up a virtual environment (optional but recommended)
+```bash
 python3 -m venv venv
 source venv/bin/activate
-3. Install dependencies
+```
+4. Install dependencies
+```bash
 pip install -r requirements.txt
-If requirements.txt doesn't exist, install Flask manually:
-pip install Flask
-4. Run the app
+```
+6. Run the app
+```bash
 python app.py
+```
 Then open your browser and go to:
 http://127.0.0.1:5000
 
