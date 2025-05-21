@@ -14,24 +14,6 @@ A simple Flask web application that helps users find recipes based on ingredient
 
 ---
 
-## 📁 Project Structure
-
-recipe_chatbot/
-├── app.py              # Main Flask application
-├── nlp_utils.py        # NLP utility to extract entities
-├── load_recipes.py     # Loads and processes recipe data
-├── recipes/            # Directory containing raw recipe data
-├── recipes.json        # Processed recipe data (used in app)
-├── recipies.json       # (Possibly a typo – check and remove if duplicate)
-├── templates/
-│   └── index.html      # HTML frontend
-├── __pycache__/        # Python cache files (can be ignored or .gitignored)
-├── README.md           # Project documentation
-└── venv/               # Python virtual environment (optional)
-
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
